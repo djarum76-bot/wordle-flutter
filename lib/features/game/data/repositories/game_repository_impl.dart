@@ -4,7 +4,7 @@ import 'package:wordle/features/game/domain/repositories/game_repository.dart';
 class GameRepositoryImpl extends GameRepository{
   @override
   Future<List<String>> loadAsset()async{
-    String content = await rootBundle.loadString("assets/words.txt");
+    String content = await rootBundle.loadString("asset/words.txt");
     List<String> contents = content.split("\n");
     return contents;
   }
